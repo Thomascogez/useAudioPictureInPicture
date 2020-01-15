@@ -1,6 +1,6 @@
 {
   "name": "useaudiopip-example",
-  "homepage": "https://Thomascogez.github.io/useaudiopip",
+  "homepage": "https://Thomascogez.github.io/useAudioPictureInPicture",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.0.1",
-    "useaudiopip": "link:.."
+    "useaudiopictureinpicture": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

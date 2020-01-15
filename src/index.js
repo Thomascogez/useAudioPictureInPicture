@@ -1,8 +1,8 @@
 import * as React from 'react'
 
 /**
- * React hook that allow you to enable picture in picture mode on a music player 
- * @param {*} initialImage          First Image to display in background of the pip frame
+ * React hook that allow you to enable picture in picture mode on a music player
+ * @param {*} initialImage          First Image to display in background of the pip frame (required)
  * @param {function} onPlay        function that would be triggered when the play btn is pressed
  * @param {function} onPause       function that would be triggered when the play btn is pressed
  * @param {function} onPrevious    function that would be triggered when the play btn is pressed
@@ -22,17 +22,21 @@ export const useAudioPictureInPicture = (initialImage, onPlay, onPause, onPrevio
   const togglePip = async () => {
     if (document.pictureInPictureElement) {
       await document.exitPictureInPicture()
-        .then(() =>{ 
+        .then(() => {
           setIsToggled(false)
         })
     } else {
       await updatePip(thumb)
       await video.requestPictureInPicture() // go in PIP mode !!
-        .then(() => { 
+        .then(() => {
           setIsToggled(true)
         })
     }
   }
+  /**
+   * update the picture in picture background
+   * @param {*} image path of the new image
+   */
   const updatePip = async (image) => {
     if (document.pictureInPictureElement) document.exitPictureInPicture() // close previous one if set to avoid update glitch
     thumb = image
@@ -48,8 +52,6 @@ export const useAudioPictureInPicture = (initialImage, onPlay, onPause, onPrevio
   // attach previous track btn on pip element
   navigator.mediaSession.setActionHandler('previoustrack', () => {
     if (onPrevious) onPrevious()
-    
-
   })
   // attach next track btn on pip element
   navigator.mediaSession.setActionHandler('nexttrack', () => {
@@ -71,7 +73,6 @@ export const useAudioPictureInPicture = (initialImage, onPlay, onPause, onPrevio
   return {
     isPipToggled,
     togglePip,
-    updatePip,
-
+    updatePip
   }
 }
