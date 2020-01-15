@@ -1,11 +1,13 @@
 # useAudioPictureInPicture
 
 
-> A react component that allow you to enable picture in picture mode on your audio player
+> A react component that allow you to enable picture in picture mode on your audio player. The inspiration came from the open spotify player
+
+![Demo](./doc/demo.gif)
 
 [![NPM](https://img.shields.io/npm/v/useaudiopictureinpicture.svg)](https://www.npmjs.com/package/useaudiopictureinpicture) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# Install
+## Install
 
 ```bash
 npm install --save useaudiopictureinpicture
@@ -16,7 +18,9 @@ or
 ```bash
 yarn add useaudiopictureinpicture
 ```
+## Demo
 
+You can find a demo of the package [here](http://blind-test.me/useAudioPictureInPicture/)
 
 
 ## Usage
@@ -32,8 +36,7 @@ const Example = () => {
 }
 ```
 
-See the example directory for a complete example
-
+(See the example directory for a complete example)
 ### Parameters:
 
 | Parameter    | description                                                  | required? | default |
