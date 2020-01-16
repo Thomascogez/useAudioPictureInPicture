@@ -1,6 +1,6 @@
 {
   "name": "useaudiopictureinpicture",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A react component that allow you to enable picture in picture mode on your audio player",
   "author": "Thomascogez",
   "license": "MIT",
@@ -66,5 +66,12 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.1.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "picture-in-picture",
+    "audio",
+    "audio-player"
+  ]
 }
