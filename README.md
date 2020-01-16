@@ -20,7 +20,7 @@ yarn add useaudiopictureinpicture
 ```
 ## Demo
 
-You can find a demo of the package [here](http://blind-test.me/useAudioPictureInPicture/)
+You can find a demo of the package [here](https://thomascogez.github.io/useAudioPictureInPicture/)
 
 
 ## Usage
