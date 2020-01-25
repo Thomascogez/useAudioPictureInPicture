@@ -1,5 +1,6 @@
 # useAudioPictureInPicture
 
+## <b> :warning: I can only assume a working version for chrome, i'm currently looking for other browser compatibility. if you want to contribute your welcome </b>
 
 > A react component that allow you to enable picture in picture mode on your audio player. The inspiration came from the open spotify player
 
